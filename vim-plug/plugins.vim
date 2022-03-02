@@ -1,4 +1,3 @@
-" __  __ _    ____             __ _                            _
 "|  \/  (_)  / ___|___  _ __  / _(_) __ _ _   _ _ __ __ _  ___(_) ___  _ __
 "| |\/| | | | |   / _ \| '_ \| |_| |/ _` | | | | '__/ _` |/ __| |/ _ \| '_ \
 "| |  | | | | |__| (_) | | | |  _| | (_| | |_| | | | (_| | (__| | (_) | | | |
@@ -34,6 +33,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'Yggdroot/indentLine'
     Plug 'preservim/nerdcommenter'
     Plug 'mhartington/oceanic-next'
+    Plug 'ghifarit53/tokyonight-vim'
     " Autocompletado
     Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
     Plug 'neovim/nvim-lspconfig'
@@ -56,7 +56,19 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
 
 
+
 call plug#end()
+
+" Themes
+set termguicolors
+
+let g:tokyonight_style = 'storm' " available: night, storm
+let g:tokyonight_enable_italic = 1
+let g:tokyonight_transparent_background = 0
+let g:tokyonight_menu_selection_background = 'red'
+let g:lightline = {'colorscheme' : 'tokyonight'}
+
+colorscheme tokyonight
 
 " SingniFy ---------------------
 
@@ -72,7 +84,6 @@ EOF
 
 " LSP Configuration ---------------
 
-colorscheme OceanicNext
     nnoremap <silent> <F2> :NERDTreeFind<CR>
     nnoremap <silent> <F3> :NERDTreeToggle<CR>
 
