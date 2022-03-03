@@ -38,6 +38,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
     Plug 'neovim/nvim-lspconfig'
     Plug 'nvim-lua/completion-nvim'
+    Plug 'sheerun/vim-polyglot'
     " Syntax
     Plug 'pangloss/vim-javascript'
     Plug 'tpope/vim-surround'

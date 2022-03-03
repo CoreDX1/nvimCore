@@ -1,10 +1,11 @@
+set t_Co=256
 set number
 set foldmethod=syntax
 set foldlevel=99
 set number relativenumber
 syntax  enable           " Enable syntax highlight
 set cursorline
-set clipboard=unnamed
+set clipboard=unnamedplus
 set rnu              " Enable line numbers
 set tabstop=3        " Show existing tab with 4 spaces width
 set softtabstop=3    " Show existing tab with 4 spaces width
@@ -24,7 +25,7 @@ set updatetime=100   " Time in miliseconds to consider the changes
 set encoding=utf-8   " The encoding should be utf-8 to activate the font icons
 ""set nobackup         " No backup files
 ""set nowritebackup    " No backup files
-""set splitright       " Create the vertical splits to the right
+set splitright       " Create the vertical splits to the right
 set splitbelow       " Create the horizontal splits below
 set autoread         " Update vim after file update from outside
 "set mouse=a          " Enable mouse support
